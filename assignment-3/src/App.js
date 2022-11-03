@@ -7,6 +7,7 @@ import Interest from "./components/Interest/Interest";
 import Skills from "./components/Skills/Skills";
 import Awards from "./components/Awards/Awards";
 import Home from "./components/Home/Home";
+import NavBar from "./components/Navigation/NavBar";
 
 function App() {
     return (
@@ -18,17 +19,7 @@ function App() {
                     flex: 1,
                     backgroundColor: "lightgreen"
                 }}>
-                    <nav style={{
-                        flexDirection: "column",
-                        display: "flex"
-                    }}>
-                        <Link to="/">Home</Link>
-                        <Link to="/About">About</Link>
-                        <Link to="/Experience">Experience</Link>
-                        <Link to="/Skills">Skills</Link>
-                        <Link to="/Interest">Interest</Link>
-                        <Link to="/Awards">Awards</Link>
-                    </nav>
+                   <NavBar/>
                 </div>
                 <div style={{
                     flex: 4
